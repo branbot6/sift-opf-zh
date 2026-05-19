@@ -1,0 +1,286 @@
+{
+  "checkpoint": "checkpoints/opf-zh-v2",
+  "eval_set": "data/gold_test.jsonl",
+  "n_samples": 1816,
+  "per_class": {
+    "private_phone": {
+      "precision": 0.9538043478260869,
+      "recall": 0.9873417721518988,
+      "f1": 0.9702833448514168,
+      "f2": 0.9804469273743017,
+      "support": 711,
+      "tp": 702,
+      "fp": 34,
+      "fn": 9
+    },
+    "private_person": {
+      "precision": 0.8393378773125608,
+      "recall": 0.8822927328556807,
+      "f1": 0.8602794411177644,
+      "f2": 0.8733535967578521,
+      "support": 977,
+      "tp": 862,
+      "fp": 165,
+      "fn": 115
+    },
+    "private_address": {
+      "precision": 0.44226044226044225,
+      "recall": 0.8256880733944955,
+      "f1": 0.5760000000000001,
+      "f2": 0.7036747458952306,
+      "support": 218,
+      "tp": 180,
+      "fp": 227,
+      "fn": 38
+    },
+    "private_url": {
+      "precision": 0.7286821705426356,
+      "recall": 0.7401574803149606,
+      "f1": 0.7343749999999999,
+      "f2": 0.7378335949764522,
+      "support": 127,
+      "tp": 94,
+      "fp": 35,
+      "fn": 33
+    },
+    "account_number": {
+      "precision": 0.6932153392330384,
+      "recall": 0.7993197278911565,
+      "f1": 0.7424960505529226,
+      "f2": 0.7755775577557756,
+      "support": 294,
+      "tp": 235,
+      "fp": 104,
+      "fn": 59
+    },
+    "private_email": {
+      "precision": 0.9662447257383966,
+      "recall": 0.9662447257383966,
+      "f1": 0.9662447257383966,
+      "f2": 0.9662447257383966,
+      "support": 237,
+      "tp": 229,
+      "fp": 8,
+      "fn": 8
+    },
+    "private_date": {
+      "precision": 0.7211328976034859,
+      "recall": 0.8487179487179487,
+      "f1": 0.7797408716136632,
+      "f2": 0.8197127290737988,
+      "support": 390,
+      "tp": 331,
+      "fp": 128,
+      "fn": 59
+    },
+    "secret": {
+      "precision": 0.7647058823529411,
+      "recall": 0.7878787878787878,
+      "f1": 0.7761194029850745,
+      "f2": 0.7831325301204819,
+      "support": 66,
+      "tp": 52,
+      "fp": 16,
+      "fn": 14
+    },
+    "__macro__": {
+      "precision": 0.7636729603586985,
+      "recall": 0.8547051561179156,
+      "f1": 0.8006923546074047,
+      "f2": 0.8299970509615362
+    }
+  },
+  "confusion_matrix_top20": [
+    {
+      "gold": "O",
+      "pred": "private_address",
+      "count": 223
+    },
+    {
+      "gold": "O",
+      "pred": "private_person",
+      "count": 164
+    },
+    {
+      "gold": "O",
+      "pred": "private_date",
+      "count": 128
+    },
+    {
+      "gold": "private_person",
+      "pred": "O",
+      "count": 112
+    },
+    {
+      "gold": "O",
+      "pred": "account_number",
+      "count": 104
+    },
+    {
+      "gold": "account_number",
+      "pred": "O",
+      "count": 59
+    },
+    {
+      "gold": "private_date",
+      "pred": "O",
+      "count": 58
+    },
+    {
+      "gold": "private_address",
+      "pred": "O",
+      "count": 38
+    },
+    {
+      "gold": "O",
+      "pred": "private_url",
+      "count": 34
+    },
+    {
+      "gold": "O",
+      "pred": "private_phone",
+      "count": 34
+    },
+    {
+      "gold": "private_url",
+      "pred": "O",
+      "count": 32
+    },
+    {
+      "gold": "O",
+      "pred": "secret",
+      "count": 16
+    },
+    {
+      "gold": "secret",
+      "pred": "O",
+      "count": 14
+    },
+    {
+      "gold": "private_phone",
+      "pred": "O",
+      "count": 9
+    },
+    {
+      "gold": "O",
+      "pred": "private_email",
+      "count": 8
+    },
+    {
+      "gold": "private_email",
+      "pred": "O",
+      "count": 8
+    },
+    {
+      "gold": "private_person",
+      "pred": "private_address",
+      "count": 3
+    },
+    {
+      "gold": "private_url",
+      "pred": "private_person",
+      "count": 1
+    },
+    {
+      "gold": "private_date",
+      "pred": "private_address",
+      "count": 1
+    }
+  ],
+  "boundary_errors": {
+    "private_person": {
+      "total_gold": 978,
+      "exact_match": 863,
+      "partial_overlap": 55,
+      "missed_entirely": 60,
+      "gold_avg_len": 2.83640081799591,
+      "pred_avg_len_when_partial": 1.8545454545454545
+    },
+    "private_phone": {
+      "total_gold": 711,
+      "exact_match": 702,
+      "partial_overlap": 7,
+      "missed_entirely": 2,
+      "gold_avg_len": 11.227848101265822,
+      "pred_avg_len_when_partial": 6.285714285714286
+    },
+    "private_url": {
+      "total_gold": 127,
+      "exact_match": 94,
+      "partial_overlap": 24,
+      "missed_entirely": 9,
+      "gold_avg_len": 20.35433070866142,
+      "pred_avg_len_when_partial": 17.875
+    },
+    "private_address": {
+      "total_gold": 218,
+      "exact_match": 180,
+      "partial_overlap": 31,
+      "missed_entirely": 7,
+      "gold_avg_len": 16.270642201834864,
+      "pred_avg_len_when_partial": 12.0
+    },
+    "account_number": {
+      "total_gold": 294,
+      "exact_match": 235,
+      "partial_overlap": 38,
+      "missed_entirely": 21,
+      "gold_avg_len": 15.295918367346939,
+      "pred_avg_len_when_partial": 6.526315789473684
+    },
+    "private_email": {
+      "total_gold": 237,
+      "exact_match": 229,
+      "partial_overlap": 5,
+      "missed_entirely": 3,
+      "gold_avg_len": 18.50210970464135,
+      "pred_avg_len_when_partial": 14.8
+    },
+    "private_date": {
+      "total_gold": 390,
+      "exact_match": 331,
+      "partial_overlap": 47,
+      "missed_entirely": 12,
+      "gold_avg_len": 9.171794871794871,
+      "pred_avg_len_when_partial": 7.680851063829787
+    },
+    "secret": {
+      "total_gold": 66,
+      "exact_match": 52,
+      "partial_overlap": 7,
+      "missed_entirely": 7,
+      "gold_avg_len": 13.742424242424242,
+      "pred_avg_len_when_partial": 11.571428571428571
+    }
+  },
+  "per_length_buckets": {
+    "short_<50": {
+      "n_samples": 1419,
+      "macro_precision": 0.7945834181332733,
+      "macro_recall": 0.8924627077434157,
+      "macro_f1": 0.8297046458843854,
+      "macro_f2": 0.861625747140311
+    },
+    "mid_50_150": {
+      "n_samples": 266,
+      "macro_precision": 0.8225731481290585,
+      "macro_recall": 0.8902459185453875,
+      "macro_f1": 0.8479278329211296,
+      "macro_f2": 0.869865473508223
+    },
+    "long_>150": {
+      "n_samples": 131,
+      "macro_precision": 0.7069824409549419,
+      "macro_recall": 0.8019620604618576,
+      "macro_f1": 0.7492926723711754,
+      "macro_f2": 0.7793727050505735
+    }
+  },
+  "negative_sample_fpr": {
+    "n_negative_samples": 805,
+    "false_predictions_total": 79,
+    "false_pred_per_sample": 0.09813664596273292,
+    "samples_with_any_fp": 67,
+    "fp_sample_rate": 0.08322981366459627
+  }
+}
