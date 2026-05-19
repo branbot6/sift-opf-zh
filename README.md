@@ -1,6 +1,6 @@
 # sift-opf-zh
 
-> LoRA fine-tune of **openai/privacy-filter** on Chinese PII detection — for the [Sift](https://github.com/) on-device privacy filter project.
+> LoRA fine-tune of **openai/privacy-filter** on Chinese PII detection — for the [Sift](https://github.com/Branbot6/sift) on-device privacy filter project.
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![Base](https://img.shields.io/badge/base-openai%2Fprivacy--filter-blueviolet)](https://huggingface.co/openai/privacy-filter)
@@ -150,9 +150,10 @@ Key lesson: **synthetic templates beat raw count** — v2.2 added 1,800 template
 
 ```bibtex
 @software{sift_opf_zh_2026,
+  author = {Branbot6},
   title  = {sift-opf-zh: A LoRA fine-tune of openai/privacy-filter for Chinese PII},
   year   = {2026},
-  url    = {https://github.com/YOUR_HANDLE/sift-opf-zh},
+  url    = {https://github.com/Branbot6/sift-opf-zh},
   note   = {v2.0}
 }
 ```
